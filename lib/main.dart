@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Flutter Demo',
+      title: 'Flutter Demo 2',
       theme: ThemeData(
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
         } else if (snap.hasError) {
           return Center(child: Text("Error: ${snap.error}")); // Show error
         } else if (!snap.hasData || snap.data!.isEmpty) {
-          return Center(child: Text("No posts available ")); // Handle empty data
+          return Center(child: Text("No posts available new  ")); // Handle empty data
         }
         List posts =snap.data!;
         return ListView.builder(
