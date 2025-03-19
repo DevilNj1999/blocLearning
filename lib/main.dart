@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
         } else if (snap.hasError) {
           return Center(child: Text("Error: ${snap.error}")); // Show error
         } else if (!snap.hasData || snap.data!.isEmpty) {
-          return Center(child: Text("No posts available")); // Handle empty data
+          return Center(child: Text("No posts available ")); // Handle empty data
         }
         List posts =snap.data!;
         return ListView.builder(
